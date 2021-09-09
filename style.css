@@ -19,10 +19,15 @@ html, body {
 	margin: 0;  /* Margin is the amount of space between the border of an element, and the elements outside it. */
 	padding: 0; /* Padding is the amount of space between the border of an element, and the elements inside it. */
 }
-
+header {
+	background-color:pink;
+	padding: 30px;
+	text-align: center;
+	font-size: 35px;
+	color: white;
+  }
 body{
 	font: 130%/1.3 TrebuchetMS,Arial,sans-serif;  /* Default fonts */
-	text-align: left; /* Alignment of the text */
 	color: black; /* Main text color */
 	background: white; /* Main text background color */
 	padding-bottom: 20px; /* You can set padding or margin for one side of an element at a time */
@@ -35,7 +40,7 @@ a {                  /* A stands for link, so this section is setting the defaul
 
 h1 {		     /* This styles the header at the top of the page */
 	font: bold 2.1em 'Source Sans Pro',Arial, Sans-Serif;
-	text-align: left;
+	text-align: center;
 	color: white;
 }
 
@@ -45,15 +50,22 @@ h2 {		     /* This styles the headers within the page */
 	margin: 0;
 }
 
-
-/* This section alters the appearance of all divs with the class "section", which is all of the divs in our html file.  We can use it to specify style elements that we want to be the same accross divs. */
-div.section {
+  
+  article {
+	float: left;
+	padding: 20px;
+	width: 70%;
+	background-color: #f1f1f1;
+  }
+  
+  /* Clear floats after the columns */
+  div.section {
 	padding: 1em;
 	margin-bottom: 0;
 	text-align: justify;
 
-}
-
+} 
+  
 /* If we want the divs with ids plan and more to look the same, we can put them together */
 #plan, #more {
 	background: #f2f2f2; /* Change the color to looks like Berea Background */
@@ -76,14 +88,20 @@ div.section {
 
 /* This alters the appearance of the div with id="whoweare" */
 #whoweare {
-	background: white;
+	background: pink;
 	color: black;
 }
 
 /* This alters the appearance of the div with id="minileft", the div containing the images */
 .minileft {
-	float: left;
+	float: center;
 	height: 100%;
 	margin-bottom:1.5em;
 	margin-right: 1em;
 }
+footer {
+	background-color: #777;
+	padding: 10px;
+	text-align: center;
+	color: white;
+  }
